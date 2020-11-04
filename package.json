@@ -1,0 +1,66 @@
+{
+  "name": "dirto-react",
+  "version": "0.1.0",
+  "homepage": "https://appearline.com/",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.20.0",
+    "base64-js": "^1.3.1",
+    "bootstrap": "^4.5.0",
+    "browser-image-compression": "^1.0.12",
+    "connected-react-router": "^6.8.0",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.24.0",
+    "google-map-react": "^1.1.7",
+    "history": "^5.0.0",
+    "jquery-react": "^1.0.0",
+    "react": "^16.13.1",
+    "react-accessible-accordion": "^3.0.1",
+    "react-bootstrap": "^1.0.1",
+    "react-countup": "^4.3.3",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.1",
+    "react-file-base64": "^1.0.3",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^3.10.0",
+    "react-modal-video": "^1.2.3",
+    "react-owl-carousel": "^2.3.1",
+    "react-particles-js": "^3.2.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "3.4.1",
+    "react-scrolltop-button": "^0.1.6",
+    "react-select": "^3.1.0",
+    "react-tabs": "^3.1.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "supercluster": "^7.1.0",
+    "swr": "^0.2.2",
+    "use-supercluster": "^0.2.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
