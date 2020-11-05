@@ -48,7 +48,7 @@ export function user_signup(body) {
   return (dispatch) => {
     return new Promise(function (resolve, reject) {
       axios
-        .post("https://dirto.herokuapp.com/app/auth/signup", body)
+        .post("http://localhost:9080/app/auth/signup", body)
         .then((response) => {
           resolve(response);
         })
@@ -64,7 +64,7 @@ export function user_signin(body) {
   return (dispatch) => {
     return new Promise(function (resolve, reject) {
       axios
-        .post("https://dirto.herokuapp.com/app/auth/signin", body)
+        .post("http://localhost:9080/app/auth/signin", body)
         .then((response) => {
           resolve(response);
         })
@@ -83,9 +83,9 @@ export function search(body) {
   return (dispatch) => {
     return new Promise(function (resolve, reject) {
       axios
-        .post("https://dirto.herokuapp.com/app/search", body)
+        .post("http://localhost:9080/app/search", body)
         .then((response) => {
-          resolve(response.data);
+          resolve(response);
         })
         .catch((err) => {
           reject(err);
@@ -98,7 +98,7 @@ export function searchByCountry(body) {
   return (dispatch) => {
     return new Promise(function (resolve, reject) {
       axios
-        .post("https://dirto.herokuapp.com/app/searchbycountry", body)
+        .post("http://localhost:9080/app/searchbycountry", body)
         .then((response) => {
           resolve(response.data);
         })
@@ -113,7 +113,7 @@ export function searchByCity(body) {
   return (dispatch) => {
     return new Promise(function (resolve, reject) {
       axios
-        .post("https://dirto.herokuapp.com/app/searchbycity", body)
+        .post("http://localhost:9080/app/searchbycity", body)
         .then((response) => {
           resolve(response.data);
         })
@@ -125,11 +125,10 @@ export function searchByCity(body) {
 }
 
 export function searchByLocation(body) {
-  console.log(body);
   return (dispatch) => {
     return new Promise(function (resolve, reject) {
       axios
-        .post("https://dirto.herokuapp.com/app/searchbylocation", body)
+        .post("http://localhost:9080/app/searchbylocation", body)
         .then((response) => {
           resolve(response.data);
         })
@@ -144,7 +143,7 @@ export function searchByCategory(body) {
   return (dispatch) => {
     return new Promise(function (resolve, reject) {
       axios
-        .post("https://dirto.herokuapp.com/app/searchbycategory", body)
+        .post("http://localhost:9080/app/searchbycategory", body)
         .then((response) => {
           resolve(response.data);
         })
@@ -160,7 +159,7 @@ export function recommendedCityCategory(body) {
   return (dispatch) => {
     return new Promise(function (resolve, reject) {
       axios
-        .post("https://dirto.herokuapp.com/app/recommendedcategory", body)
+        .post("http://localhost:9080/app/recommendedcategory", body)
         .then((response) => {
           resolve(response.data);
         })
@@ -174,14 +173,14 @@ export function recommendedCityCategory(body) {
 // <<<<<<<<<<<<< listing >>>>>>>>>>>>>>>>>>
 // <<<<<<<<<<<<< listing >>>>>>>>>>>>>>>>>>
 // <<<<<<<<<<<<< listing >>>>>>>>>>>>>>>>>>
-// https://dirto.herokuapp.com/
+// http://localhost:9080/
 // https://dirto.herokuapp.com
 
 export function add_listing(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/listing/add_listing", body)
+        .post("http://localhost:9080/app/listing/add_listing", body)
         .then((response) => {
           resolve(response);
         })
@@ -197,7 +196,7 @@ export function get_listing(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/listing/get_listing", body)
+        .post("http://localhost:9080/app/listing/get_listing", body)
         .then((response) => {
           resolve(response);
         })
@@ -212,7 +211,7 @@ export function get_listing_usr(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/listing/get_listing/usr", body)
+        .post("http://localhost:9080/app/listing/get_listing/usr", body)
         .then((response) => {
           resolve(response);
         })
@@ -227,7 +226,7 @@ export function del_listing(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/listing/del_listing", body)
+        .post("http://localhost:9080/app/listing/del_listing", body)
         .then((response) => {
           resolve(response);
         })
@@ -241,7 +240,7 @@ export function del_listing(body) {
 // <<<<<<<<<<<<< listing >>>>>>>>>>>>>>>>>>
 // <<<<<<<<<<<<< listing >>>>>>>>>>>>>>>>>>
 // <<<<<<<<<<<<< listing >>>>>>>>>>>>>>>>>>
-// https://dirto.herokuapp.com/
+// http://localhost:9080/
 // https://dirto.herokuapp.com
 
 // get_unapproved_listing
@@ -251,7 +250,7 @@ export function get_unapproved_listing(body) {
     return new Promise((resolve, reject) => {
       axios
         .post(
-          "https://dirto.herokuapp.com/app/admin/get_unapproved_listing",
+          "http://localhost:9080/app/admin/get_unapproved_listing",
           body
         )
         .then((response) => {
@@ -270,7 +269,7 @@ export function get_approved_listing(body) {
     return new Promise((resolve, reject) => {
       axios
         .post(
-          "https://dirto.herokuapp.com/app/admin/get_unapproved_listing",
+          "http://localhost:9080/app/admin/get_unapproved_listing",
           body
         )
         .then((response) => {
@@ -287,7 +286,7 @@ export function approved_listing(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/apr_listing", body)
+        .post("http://localhost:9080/app/admin/apr_listing", body)
         .then((response) => {
           resolve(response);
         })
@@ -303,7 +302,7 @@ export function unapproved_listing(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/unapr_listing", body)
+        .post("http://localhost:9080/app/admin/unapr_listing", body)
         .then((response) => {
           resolve(response);
         })
@@ -320,7 +319,7 @@ export function admin_delete_listing(body) {
     return new Promise((resolve, reject) => {
       axios
         .post(
-          "https://dirto.herokuapp.com/app/admin/admin_delete_listing",
+          "http://localhost:9080/app/admin/admin_delete_listing",
           body
         )
         .then((response) => {
@@ -338,7 +337,7 @@ export function add_cat(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/add_cat", body)
+        .post("http://localhost:9080/app/admin/add_cat", body)
         .then((response) => {
           resolve(response);
         })
@@ -353,7 +352,7 @@ export function get_cat() {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .get("https://dirto.herokuapp.com/app/admin/get_cat")
+        .get("http://localhost:9080/app/admin/get_cat")
         .then((response) => {
           resolve(response);
         })
@@ -369,7 +368,7 @@ export function del_cat(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/del_cat", body)
+        .post("http://localhost:9080/app/admin/del_cat", body)
         .then((response) => {
           resolve(response);
         })
@@ -386,7 +385,7 @@ export function edt_cat(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/edt_cat", body)
+        .post("http://localhost:9080/app/admin/edt_cat", body)
         .then((response) => {
           resolve(response);
         })
@@ -401,7 +400,7 @@ export function add_cit(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/add_loc", body)
+        .post("http://localhost:9080/app/admin/add_loc", body)
         .then((response) => {
           resolve(response);
         })
@@ -416,7 +415,7 @@ export function get_cit() {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .get("https://dirto.herokuapp.com/app/admin/get_cit")
+        .get("http://localhost:9080/app/admin/get_cit")
         .then((response) => {
           resolve(response);
         })
@@ -431,7 +430,7 @@ export function del_cit(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/del_cit", body)
+        .post("http://localhost:9080/app/admin/del_cit", body)
         .then((response) => {
           resolve(response);
         })
@@ -446,7 +445,7 @@ export function edt_cit(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/edt_cit", body)
+        .post("http://localhost:9080/app/admin/edt_cit", body)
         .then((response) => {
           resolve(response);
         })
@@ -461,7 +460,7 @@ export function add_loc(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/add_loc", body)
+        .post("http://localhost:9080/app/admin/add_loc", body)
         .then((response) => {
           resolve(response);
         })
@@ -476,7 +475,7 @@ export function get_loc() {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .get("https://dirto.herokuapp.com/app/admin/get_loc")
+        .get("http://localhost:9080/app/admin/get_loc")
         .then((response) => {
           resolve(response);
         })
@@ -491,7 +490,7 @@ export function del_loc(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/del_loc", body)
+        .post("http://localhost:9080/app/admin/del_loc", body)
         .then((response) => {
           resolve(response);
         })
@@ -506,7 +505,7 @@ export function edt_loc(body) {
   return (dispatch) => {
     return new Promise((resolve, reject) => {
       axios
-        .post("https://dirto.herokuapp.com/app/admin/edt_loc", body)
+        .post("http://localhost:9080/app/admin/edt_loc", body)
         .then((response) => {
           resolve(response);
         })
